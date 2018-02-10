@@ -1,0 +1,298 @@
+// Fonts
+$primaryFont: Helvetica;
+$secondaryFont: Arial;
+$thirdFont: "Lucia Grande";
+$fourthFont: sans-serif;
+
+// Colors
+$light_blue:#2395a2;
+$green: #2a6c0c;
+$super_light: #F34002;
+$light:#E96D2F;
+$nearly_black: #555;
+$black: #000;
+$nearly_white:#F9F9F9;
+$white: #fff;
+
+// Reset
+
+*{
+	box-sizing: border-box;
+}
+
+
+// Helpers
+.clearfix:before, .clearfix:after{
+	content: " ";
+	display: table;
+}
+
+.clearfix:after{
+	clear: both;
+}
+
+.wrapper {
+	width: 1040px;
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+@media (max-width: 679px) {
+
+	.wrapper{
+		width: 95%;
+	}
+	
+}
+
+@media (min-width: 680px) and (max-width: 959px) {
+	.wrapper{
+		width: 680px;
+	}
+}
+
+// Main styles
+
+body{
+
+	font-family: $primaryFont, $secondaryFont, $thirdFont, fourthFont;
+}	
+
+//Top_header
+
+#top_header{
+	
+	padding: 0.3em 0;
+	border-bottom: 1px solid $super_light;
+
+	a {
+		font-size: 1.1em;
+		color: $nearly_black;
+		text-decoration: none;
+		padding-right: 1em;
+		
+		&:hover{
+			color:$super_light;
+		}
+
+	}
+
+	.brand_right{
+		float: right;
+		margin-top: 1.5em;
+	}
+
+	img{
+		float: left;
+		margin-top: 0.3em;
+		width: 8em;
+		height: 3.5em;
+		transition: transform 0.5s ease-in-out;
+
+		&:hover{
+			transform:scale(1.1, 1.1);
+		}
+	}
+}
+
+// Banner
+
+.background_settings{
+
+	background-size: cover;
+ 	background-repeat: no-repeat;
+ 	background-position: center; 
+}
+
+#banner{
+	text-align: center;
+	padding-bottom: 10em;
+	color:black;
+	background-image: url('../images/background.jpg');  
+ 	filter: contrast(130%);
+ 	padding-top: 4em;
+	margin:0 auto;
+
+	h1{
+		color: $white;
+		margin-top: 4em;
+		margin-bottom: 0.5em;
+		font-size: 2.5em;
+		font-weight: 600%;
+	}
+
+	p{
+		color: $white;
+		font-size: 1.2em;
+		font-weight: 600%;
+	}
+
+	.icon{
+		color: $white;
+		padding-right: 2em;
+	}
+
+	.copy_right{
+		font-size: 0.8em;
+	}
+}
+
+.button{
+	display: inline-block;
+	text-decoration: none;
+	margin-top: 1em;
+	margin-bottom: 5em;
+	border: 1px solid $super_light;
+	padding: 0.7em 0.5em;
+	border-radius: 10px;
+	background-color: $super_light;
+	color: $white;
+	font-size: 1.2em;
+
+	&:hover{
+	background-color: $light;
+	}
+}
+
+//Solution
+
+#solution{
+	padding-top: 2em;
+	background-color: $nearly_white;
+	text-align: center;
+	font-size: 1.2em;
+	
+	img{
+		height: 10em;
+		width: 10em;
+		border-radius: 100%;
+	}
+
+	.detail{
+		width: 20em;
+	}
+	.solution_detail_1{
+		display: inline-block;
+		padding-right: 5em;
+		padding-top: 2em;
+	}
+
+	.solution_detail_2{
+		display: inline-block;
+		padding-top: 2em;
+	}
+}
+
+//Why_us
+
+#why_us{
+	text-align: center;
+	color: $nearly_black;
+	font-size: 1.2em;
+	margin-bottom: 2em;
+
+	span{
+		border: solid black 0.1em;
+		border-radius: 100%;
+		margin-right: 0.5em;
+		padding: 0.1em 0.5em 0.1em 0.5em;
+	}
+
+	h2{
+		margin-top: 2em;
+	}
+
+	p{
+		height: 5em;
+		width: 20em;
+	}
+
+	.reason{
+		display: inline-block;
+	}
+
+}
+
+#r1{
+	span{
+		border-color: $green;
+	}
+
+	h2{
+		color: $green;
+	}
+}
+
+#r2{
+	span{
+		border-color: $super_light;
+	}
+
+	h2{
+		color: $super_light;
+	}
+}
+
+#r3{
+	span{
+		border-color: $light_blue;
+	}
+
+	h2{
+		color: $light_blue;
+	}
+}
+
+//inscription
+
+#inscription{
+
+	padding-top: 2em;
+	background-color: #EFF6FF;
+	
+	p{
+		margin: 1em 0 1em 2em;
+		text-align: center;
+		width: 30em;
+		color: $super_light;
+		font-size: 2em;
+		font-style: italic;
+	}
+}
+
+.help_us{
+	padding-top: 2em;
+	text-align: center;
+	font-size: 1.2em;
+	color: $nearly_black;
+
+	p{
+		width: 30em;
+		margin: 1em 0 1em 12em;
+	}
+}
+
+.footer{
+	padding-top: 2.5em;
+	padding-bottom: 2em;
+	background-color: #2395a2;
+	text-align: center;
+	color: $white;
+	a{
+		color: $white;
+		text-decoration: none;
+		font-size: 1.2em;
+		padding-right: 2em;
+	}
+
+	img{
+
+		width: 20em;
+		height: 10em;
+	}
+
+	p{
+		font-size: 1em; 
+		padding-top: 1em;
+	}
+}
